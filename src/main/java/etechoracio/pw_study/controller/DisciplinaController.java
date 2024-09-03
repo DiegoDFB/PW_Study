@@ -1,9 +1,10 @@
 //Arthur de Jesus Lima e Diego Francischette Blanco
 
-package com.etechoracio.etechoracio.controller;
+package etechoracio.pw_study.controller;
 
-import com.etechoracio.etechoracio.entity.Disciplina;
-import com.etechoracio.etechoracio.repository.DisciplinaRepository;
+import etechoracio.pw_study.entity.Disciplina;
+import etechoracio.pw_study.repository.DisciplinaRepository;
+import etechoracio.pw_study.service.DisciplinaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,11 +19,11 @@ import java.util.Optional;
 public class DisciplinaController {
 
     @Autowired
-    private DisciplinaRepository repository;
+    private DisciplinaService service;
 
     @GetMapping
-    public List<Disciplina> getAll() {
-        return repository.findAll();
+    public List<Disciplina> listarDisciplina() {
+        return service.listar();
     }
 
     @GetMapping("/{id}")

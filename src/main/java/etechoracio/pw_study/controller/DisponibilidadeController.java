@@ -1,11 +1,9 @@
 //Arthur de Jesus Lima e Diego Francischette Blanco
 
-package com.etechoracio.etechoracio.controller;
+package etechoracio.pw_study.controller;
 
-import com.etechoracio.etechoracio.entity.Disciplina;
-import com.etechoracio.etechoracio.entity.Disponibilidade;
-import com.etechoracio.etechoracio.repository.DisciplinaRepository;
-import com.etechoracio.etechoracio.repository.DisponibilidadeRepository;
+import etechoracio.pw_study.entity.Disponibilidade;
+import etechoracio.pw_study.repository.DisponibilidadeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
